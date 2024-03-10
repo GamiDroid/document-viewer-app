@@ -1,0 +1,42 @@
+﻿@page "/documents"
+@inject IDocumentService _documentService
+
+<PageTitle>Documents</PageTitle>
+
+<h1>Documents</h1>
+
+@if (_documents== null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Size (in bytes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var document in _documents)
+            {
+                <tr>
+                    <td>@document.Id</td>
+                    <td>@document.FileName</td>
+                    <td>@document.SizeInBytes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private DocumentInfo[]? _documents;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _documents = (await _documentService.FetchAsync()).ToArray();
+    }
+}

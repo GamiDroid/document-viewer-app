@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentViewerApp", "DocumentViewerApp\DocumentViewerApp\DocumentViewerApp.csproj", "{F206B248-93A8-4619-A12C-ED742D51A648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentViewerApp.Client", "DocumentViewerApp\DocumentViewerApp.Client\DocumentViewerApp.Client.csproj", "{B753F0D1-55E0-47D1-80CA-3CDA04C071A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F206B248-93A8-4619-A12C-ED742D51A648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F206B248-93A8-4619-A12C-ED742D51A648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F206B248-93A8-4619-A12C-ED742D51A648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F206B248-93A8-4619-A12C-ED742D51A648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B753F0D1-55E0-47D1-80CA-3CDA04C071A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B753F0D1-55E0-47D1-80CA-3CDA04C071A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B753F0D1-55E0-47D1-80CA-3CDA04C071A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B753F0D1-55E0-47D1-80CA-3CDA04C071A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A226344-61F4-444E-9997-DD134A77D48A}
+	EndGlobalSection
+EndGlobal
